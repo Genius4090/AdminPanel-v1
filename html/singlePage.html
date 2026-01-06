@@ -12,81 +12,122 @@
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-    <section class="w-full h-screen bg-[#F2EAE1] flex">
-      <!-- sidebar start -->
+    <div
+      id="modal-wrapper"
+      class="modal__wrapper fixed backdrop-blur-md w-full h-full scale-[0] z-350 flex items-center justify-center"
+    >
       <div
-        class="w-[18%] h-screen flex flex-col justify-between items-center pt-[18px] pb-[33px]"
-      >
-        <div class="space-y-16">
-          <h2
-            class="font-bold text-xl border-l-[#f9ca31] border-l-4 pl-2 mr-10"
-          >
-            Admin Students
-          </h2>
-          <div class="flex flex-col items-center">
-            <img
-              src="../images/user.png"
-              alt="userImage"
-              class="rounded-full"
-            />
-            <h2 class="font-bold text-lg mt-5">Karthi Madesh</h2>
-            <p class="text-[#FEAF00] text-sm font-medium mt-1">Admin</p>
-            <button
-              class="cursor-pointer bg-[#FEAF00] px-12 py-2 mt-16 rounded flex items-center gap-3"
+        class="modal__inner w-[500px] h-[200px] rounded-2xl bg-white shadow-lg modal__inner overflow-hidden relative"
+      ></div>
+    </div>
+    <section class="w-full h-full bg-[#F2EAE1] flex">
+      <!-- sidebar start -->
+      <div class="w-[18%] h-screen">
+        <div
+          class="fixed w-[18%] h-screen flex flex-col justify-between items-center pt-[22px] pb-[33px]"
+        >
+          <div class="space-y-16">
+            <h2
+              class="font-bold text-xl border-l-[#f9ca31] border-l-4 pl-2 mr-10"
             >
-              <i class="bi bi-mortarboard"></i>
-              <span class="text-sm font-medium">Teachers</span>
-            </button>
+              Admin Students
+            </h2>
+            <div class="flex flex-col items-center">
+              <img
+                src="../images/user.png"
+                alt="userImage"
+                class="rounded-full showUserProfileImg"
+                width="128"
+                height="128"
+              />
+              <h2 class="font-bold text-lg mt-5 showUserName">Default User</h2>
+              <p class="text-[#FEAF00] text-sm font-medium mt-1 showUserRole">
+                Default Role
+              </p>
+              <button
+                class="cursor-pointer bg-[#FEAF00] px-12 py-2 mt-16 rounded flex items-center gap-3"
+              >
+                <i class="bi bi-mortarboard"></i>
+                <span class="text-sm font-medium">Teachers</span>
+              </button>
+            </div>
           </div>
+          <button
+            class="cursor-pointer rounded flex items-center gap-2 mx-auto"
+          >
+            <span class="text-sm font-medium">Logout</span
+            ><i class="bi bi-box-arrow-right mt-1"></i>
+          </button>
         </div>
-        <button class="cursor-pointer rounded flex items-center gap-2 mx-auto">
-          <span class="text-sm font-medium">Logout</span
-          ><i class="bi bi-box-arrow-right mt-1"></i>
-        </button>
       </div>
       <!-- sidebar end  -->
 
       <!-- main+navbar start -->
-      <div class="w-[82%] h-screen flex flex-col">
+      <div class="w-[82%] h-full flex flex-col">
         <!-- navbar start -->
         <nav class="w-full h-18 flex items-center justify-between px-[30px]">
-          <button>
+          <button onclick="handleBack()">
             <i class="bi bi-arrow-left-circle text-xl cursor-pointer"></i>
           </button>
-          
-           
-            <button><i class="bi bi-bell text-xl cursor-pointer"></i></button>
-          
+
+          <button onclick="handleNotification()">
+            <i class="bi bi-bell text-[#333333] text-xl cursor-pointer"></i>
+          </button>
         </nav>
         <!-- navbar end -->
 
         <!-- mainContent  start-->
-        <div class="w-full bg-[#f5f3f2] h-full px-8 pt-3">
-          <div
-            class="w-full border-b-2 border-b-[#E5E5E5] pb-3"
-          >
+        <div class="w-full bg-[#f5f3f2] px-8 pt-3 pb-10">
+          <div class="w-full rounded border-b-2 border-b-[#E5E5E5]">
             <h2 class="font-bold text-[24px]">User2077</h2>
-            </div>
-            <div class="w-[592px] h-[391px] bg-white  rounded mt-10 flex items-start pt-7 pl-6">
-                <div class="flex items-center gap-12">
-                    <img src="../images/user.png" alt="userProfileImage" width="200" height="200" class="rounded">
-                    <div class="">
-                     <span class="text-[#ACACAC] font-semibold text-xs">Name <p class="font-normal text-base text-black">Abdulboriy</p></span>
-                     <span class="text-[#ACACAC] font-semibold text-xs">Email <p class="font-normal text-base text-black">karthi@gmmail.com</p></span>
-                     <span class="text-[#ACACAC] font-semibold text-xs">Phone <p class="font-normal text-base text-black">7305477760</p></span>
-                     <span class="text-[#ACACAC] font-semibold text-xs">Date admission <p class="font-normal text-base text-black">08-Dec, 2021</p></span>
-    
-                    </div>
-                </div>
-            </div>
-           
           </div>
-        
+          <div
+            class="w-[592px] h-[391px] bg-white rounded mt-10 flex items-start pt-7 pl-6"
+          >
+            <div class="flex items-center gap-12">
+              <img
+                src="../images/user.png"
+                alt="userProfileImage"
+                width="200"
+                height="200"
+                class="rounded singleImage"
+              />
+              <div class="flex flex-col gap-2">
+                <span class="text-[#ACACAC] font-semibold text-xs"
+                  >Name
+                  <p class="font-normal text-base text-black singleName">
+                    -
+                  </p></span
+                >
+                <span class="text-[#ACACAC] font-semibold text-xs"
+                  >Email
+                  <p class="font-normal text-base text-black singleEmail">
+                    -
+                  </p></span
+                >
+                <span class="text-[#ACACAC] font-semibold text-xs"
+                  >Phone
+                  <p class="font-normal text-base text-black singlePhone">
+                    -
+                  </p></span
+                >
+                <span class="text-[#ACACAC] font-semibold text-xs"
+                  >Date admission
+                  <p class="font-normal text-base text-black singleDate">
+                    -
+                  </p></span
+                >
+              </div>
+            </div>
+          </div>
         </div>
+
         <!-- mainContent end  -->
       </div>
       <!-- main+navbar end -->
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="../js/singlePage.js"></script>
   </body>
 </html>

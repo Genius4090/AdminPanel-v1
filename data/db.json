@@ -1,0 +1,108 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "abdulboriy",
+      "name": "Abdulboriy",
+      "surname": "To'lqinov",
+      "password": "1234",
+      "profileImage": "https://i.redd.it/i3h8zbeiziac1.jpeg",
+      "role": "Super admin",
+      "email": "username@gmail.com",
+      "phone": "+998770026017",
+      "register": "08-DEC, 2021"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "1",
+      "name": "Otabek Karimov",
+      "image": "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80",
+      "email": "otabek.karimov@gmail.com",
+      "phone": "+998932346651",
+      "enroll": "1234567305477760",
+      "register": "08-Dec, 2021"
+    },
+    {
+      "id": "2",
+      "name": "Aziza Muminova",
+      "image": "https://www.perfocal.com/blog/content/images/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg",
+      "email": "aziza.muminova@mail.com",
+      "phone": "+998901234567",
+      "enroll": "9823456712345678",
+      "register": "15-Jan, 2022"
+    },
+    {
+      "id": "3",
+      "name": "Jasmin Akbarova",
+      "image": "https://img.freepik.com/free-photo/front-view-business-woman-suit_23-2148603018.jpg?semt=ais_hybrid&w=740&q=80",
+      "email": "jasmin.akbarova@gmail.com",
+      "phone": "+998935678901",
+      "enroll": "5647382910564738",
+      "register": "02-Feb, 2021"
+    },
+    {
+      "id": "4",
+      "name": "Bekzod Tursunov",
+      "image": "https://blog-pixomatic.s3.appcnt.com/image/22/01/26/61f166e1377d4/_orig/pixomatic_1572877223091.png",
+      "email": "bekzod.t@mail.com",
+      "phone": "+998911112233",
+      "enroll": "8899001122334455",
+      "register": "19-Mar, 2023"
+    },
+    {
+      "id": "5",
+      "name": "Dilnoza Rakhimova",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/031/532/636/small/smiling-young-woman-of-asian-descent-dressed-in-elegant-dress-ai-generative-photo.jpg",
+      "email": "dilnoza.r@gmail.com",
+      "phone": "+998933334455",
+      "enroll": "4455667788990011",
+      "register": "27-Apr, 2022"
+    },
+    {
+      "id": "6",
+      "name": "Sardor Ismailov",
+      "image": "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80",
+      "email": "sardor.ismailov@mail.com",
+      "phone": "+998990011223",
+      "enroll": "1100223344556677",
+      "register": "10-May, 2021"
+    },
+    {
+      "id": "7",
+      "name": "Malika Abduvaliyeva",
+      "image": "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80",
+      "email": "malika.abdu@gmail.com",
+      "phone": "+998931234987",
+      "enroll": "7788990011223344",
+      "register": "01-Jun, 2023"
+    },
+    {
+      "id": "8",
+      "name": "Sherzod Usmonov",
+      "image": "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80",
+      "email": "sherzod.usmonov@mail.com",
+      "phone": "+998975551122",
+      "enroll": "3344556677889900",
+      "register": "18-Jul, 2022"
+    },
+    {
+      "id": "9",
+      "name": "Nilufar Sodikova",
+      "image": "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80",
+      "email": "nilufar.s@gmail.com",
+      "phone": "+998941112244",
+      "enroll": "5566778899001122",
+      "register": "09-Aug, 2021"
+    },
+    {
+      "id": "10",
+      "name": "Rustam Qodirov",
+      "image": "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80",
+      "email": "rustam.qodirov@mail.com",
+      "phone": "+998933219876",
+      "enroll": "9988776655443322",
+      "register": "30-Sep, 2023"
+    }
+  ]
+}
