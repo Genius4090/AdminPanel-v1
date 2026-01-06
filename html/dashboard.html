@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <style type="text/tailwindcss"></style>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <section class="w-full h-screen bg-[#F2EAE1] flex">
+      <!-- sidebar start -->
+      <div
+        class="w-[18%] h-screen flex flex-col justify-between items-center pt-[18px] pb-[33px]"
+      >
+        <div class="space-y-16">
+          <h2
+            class="font-bold text-xl border-l-[#f9ca31] border-l-4 pl-2 mr-10"
+          >
+            Admin Students
+          </h2>
+          <div class="flex flex-col items-center">
+            <img
+              src="../images/user.png"
+              alt="userImage"
+              class="rounded-full"
+            />
+            <h2 class="font-bold text-lg mt-5">Karthi Madesh</h2>
+            <p class="text-[#FEAF00] text-sm font-medium mt-1">Admin</p>
+            <button
+              class="cursor-pointer bg-[#FEAF00] px-12 py-2 mt-16 rounded flex items-center gap-3"
+            >
+              <i class="bi bi-mortarboard"></i>
+              <span class="text-sm font-medium">Teachers</span>
+            </button>
+          </div>
+        </div>
+        <button class="cursor-pointer rounded flex items-center gap-2 mx-auto">
+          <span class="text-sm font-medium">Logout</span
+          ><i class="bi bi-box-arrow-right mt-1"></i>
+        </button>
+      </div>
+      <!-- sidebar end  -->
+
+      <!-- main+navbar start -->
+      <div class="w-[82%] h-screen flex flex-col">
+        <!-- navbar start -->
+        <nav class="w-full h-18 flex items-center justify-between px-[30px]">
+          <button>
+            <i class="bi bi-arrow-left-circle text-xl cursor-pointer"></i>
+          </button>
+          <div class="flex gap-6">
+            <div
+              class="w-[240px] py-2 bg-white rounded-[8px] flex items-center gap-2 px-4"
+            >
+              <input
+                type="text"
+                placeholder="Search..."
+                class="w-full outline-none placeholder:text-[#C4C4C4] text-sm"
+              />
+              <i class="bi bi-search text-[#C4C4C4]"></i>
+            </div>
+            <button><i class="bi bi-bell text-xl cursor-pointer"></i></button>
+          </div>
+        </nav>
+        <!-- navbar end -->
+
+        <!-- mainContent  start-->
+        <div class="w-full bg-[#f5f3f2] h-full px-8 pt-3">
+          <div
+            class="w-full flex items-center justify-between border-b-2 border-b-[#E5E5E5] pb-3"
+          >
+            <h2 class="font-bold text-[24px]">Teachers List</h2>
+            <div class="flex items-center gap-7">
+              <button class="cursor-pointer">
+                <img
+                  src="../images/sortIcon.svg"
+                  alt="sortIcon"
+                  width="16"
+                  height="22"
+                />
+              </button>
+              <button
+                class="bg-[#FEAF00] rounded text-white py-3 px-6 font-medium cursor-pointer"
+              >
+                ADD NEW STUDENT
+              </button>
+            </div>
+          </div>
+          <!-- table start -->
+          <table class="w-full mt-5">
+            <thead class="border-b-20 border-transparent">
+            <tr class="text-xs">
+                <th class="font-semibold text-[#ACACAC]"></th>
+                <th class="font-semibold text-[#ACACAC]">Name</th>
+                <th class="font-semibold text-[#ACACAC]">Email</th>
+                <th class="font-semibold text-[#ACACAC]">Phone</th>
+                <th class="font-semibold text-[#ACACAC]">Enroll Number</th>
+                <th class="font-semibold text-[#ACACAC]">Date admission</th>
+              </tr>
+            </thead>
+            <tbody align="center">
+              <tr class="w-full bg-white h-21 ">
+                <td>
+                  <img
+                    src="../images/profile.png"
+                    alt="userImage"
+                    width="65"
+                    height="55"
+                  />
+                </td>
+                <td>Karthi</td>
+                <td>karthi@gmmail.com</td>
+                <td>7305477760</td>
+                <td>1234567305477760</td>
+                <td>08-Dec, 2021</td>
+                <td class="text-xl space-x-2">
+                  <button>
+                    <i
+                      class="bi bi-three-dots cursor-pointer text-gray-500"
+                    ></i>
+                  </button>
+                  <button>
+                    <i class="bi bi-pencil text-[#FEAF00] cursor-pointer"></i>
+                  </button>
+                  <button>
+                    <i class="bi bi-trash text-[#FEAF00] cursor-pointer"></i>
+                  </button>
+                </td>
+                <tr class="h-3"></tr
+              </tr>
+              <tr class="w-full bg-white h-21">
+                <td>
+                  <img
+                    src="../images/profile.png"
+                    alt="userImage"
+                    width="65"
+                    height="55"
+                  />
+                </td>
+                <td>Karthi</td>
+                <td>karthi@gmmail.com</td>
+                <td>7305477760</td>
+                <td>1234567305477760</td>
+                <td>08-Dec, 2021</td>
+                <td class="text-xl space-x-2">
+                  <button>
+                    <i
+                      class="bi bi-three-dots cursor-pointer text-gray-500"
+                    ></i>
+                  </button>
+                  <button>
+                    <i class="bi bi-pencil text-[#FEAF00] cursor-pointer"></i>
+                  </button>
+                  <button>
+                    <i class="bi bi-trash text-[#FEAF00] cursor-pointer"></i>
+                  </button>
+                </td>
+                <tr class="h-3"></tr
+              </tr>
+              <tr class="w-full bg-white h-21 ">
+                <td>
+                  <img
+                    src="../images/profile.png"
+                    alt="userImage"
+                    width="65"
+                    height="55"
+                  />
+                </td>
+                <td>Karthi</td>
+                <td>karthi@gmmail.com</td>
+                <td>7305477760</td>
+                <td>1234567305477760</td>
+                <td>08-Dec, 2021</td>
+                <td class="text-xl space-x-2">
+                  <button>
+                    <i
+                      class="bi bi-three-dots cursor-pointer text-gray-500"
+                    ></i>
+                  </button>
+                  <button>
+                    <i class="bi bi-pencil text-[#FEAF00] cursor-pointer"></i>
+                  </button>
+                  <button>
+                    <i class="bi bi-trash text-[#FEAF00] cursor-pointer"></i>
+                  </button>
+                </td>
+               
+              </tr>
+            </tbody>
+          </table>
+          <!-- table end -->
+        </div>
+        <!-- mainContent end  -->
+      </div>
+      <!-- main+navbar end -->
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>
