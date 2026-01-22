@@ -15,7 +15,7 @@ loginForm.addEventListener("submit", (e)=>{
         if(res.data.length > 0){
             errorMessage.nextElementSibling.textContent = "Loading..."
             setTimeout(()=>{
-                location.href = "dashboard.html"
+                location.href = "../dashboard.html"
                 localStorage.setItem("userInfo", JSON.stringify(res.data[0]))
             },1000)
         }else{
